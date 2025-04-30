@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    width: 60px;
+    height: 90vh;
+    background: rgba(122, 120, 120, 0.235);
+    transition: all .55s ease;
+    margin-left: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    backdrop-filter: blur(8px);
+}
+
+.container:hover {
+    width: 280px;
+}
+
+.icons {
+    text-align: center;
+    width: 70px;
+    margin-left: 7px;
+    margin-bottom: 25px;
+}
+
+i {
+    margin-top: 29.9px;
+    color: white;
+    font-size: 1.3rem;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+
+.btn {
+    width: 90px;
+}
+
+button {
+    cursor: pointer;
+    padding: 16px 0px;
+    padding-left: 40px;
+    width: 210px;
+    text-align: left;
+    margin: 5px 0px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+}
+
+button:hover {
+    border-left: 3px solid rgb(1, 255, 77);
+    border-top-left-radius: 8px;
+    font-weight: 500;
+    color: rgb(242, 239, 233);
+    border-bottom-left-radius: 8px;
+    background:linear-gradient(to right, rgb(1, 63, 45), rgb(2, 138, 2));
+}
+
+.container:hover .btn:hover ~ .icons i {
+    color: rgb(6, 236, 18);
+}
+
+img {
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    margin-right: 10px;
+}
